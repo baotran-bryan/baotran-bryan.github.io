@@ -1,0 +1,19 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "*Status:* {{.Build.Status}}\n*Repo:* <https://github.com/caddijp/{{.Build.Substitutions.REPO_NAME}}|{{.Build.Substitutions.REPO_NAME}}>\n*Job:* {{.Build.Substitutions.TRIGGER_NAME}}\n*Commit:* <https://github.com/caddijp/{{.Build.Substitutions.REPO_NAME}}/commit/{{.Build.Substitutions.COMMIT_SHA}}|{{.Build.Substitutions.SHORT_SHA}}>\n*Branch:* <https://github.com/caddijp/{{.Build.Substitutions.REPO_NAME}}/tree/{{.Build.Substitutions.BRANCH_NAME}}|{{.Build.Substitutions.BRANCH_NAME}}>"
+    },
+    "accessory": {
+      "type": "button",
+      "text": {
+        "type": "plain_text",
+        "text": "View Job"
+      },
+      "value": "click_me_123",
+      "url": "{{.Build.LogUrl}}",
+      "action_id": "button-action"
+    }
+  }
+]
