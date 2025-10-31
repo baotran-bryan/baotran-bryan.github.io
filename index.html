@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal information page of Bao Tran Bryan">
+    <title>Bao Tran Bryan - Personal Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            border-left: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateX(5px);
+            background: #e8f4f8;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: var(--light-bg);
+            border-radius: 5px;
+        }
+
+        .contact-item .icon {
+            width: 40px;
+            height: 40px;
+            background: var(--secondary-color);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--secondary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--primary-color);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bao Tran Bryan</h1>
+            <p class="subtitle">Welcome to my personal page</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Bao Tran Bryan. Welcome to my personal information page.
+                This is a space where I share information about my professional background,
+                skills, and interests.
+            </p>
+            <p>
+                Feel free to explore and learn more about my work and experience.
+                I'm passionate about technology, innovation, and continuous learning.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong>Web Development</strong>
+                </div>
+                <div class="skill-item">
+                    <strong>Programming</strong>
+                </div>
+                <div class="skill-item">
+                    <strong>Problem Solving</strong>
+                </div>
+                <div class="skill-item">
+                    <strong>Project Management</strong>
+                </div>
+                <div class="skill-item">
+                    <strong>Team Collaboration</strong>
+                </div>
+                <div class="skill-item">
+                    <strong>Technical Documentation</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="icon">@</div>
+                    <div>
+                        <strong>Email:</strong><br>
+                        <span>your.email@example.com</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">🌐</div>
+                    <div>
+                        <strong>Website:</strong><br>
+                        <span>baotran-bryan.github.io</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">📍</div>
+                    <div>
+                        <strong>Location:</strong><br>
+                        <span>Your Location</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://github.com/baotran-bryan" class="social-link" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/yourhandle" class="social-link" target="_blank">Twitter</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Bao Tran Bryan. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
